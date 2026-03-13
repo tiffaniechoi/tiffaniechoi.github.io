@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{SITE_TITLE}}</title>
+  <meta name="description" content="{{SITE_DESCRIPTION}}" />
+  <link rel="canonical" href="{{CANONICAL_URL}}" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{SITE_TITLE}}" />
+  <meta property="og:description" content="{{SITE_DESCRIPTION}}" />
+  <meta property="og:image" content="{{OG_IMAGE_URL}}" />
+  <meta property="og:url" content="{{CANONICAL_URL}}" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="{{SITE_TITLE}}" />
+  <meta name="twitter:description" content="{{SITE_DESCRIPTION}}" />
+  <meta name="twitter:image" content="{{OG_IMAGE_URL}}" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAV ===================== -->
+  <nav class="nav" id="site-nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__name">{{NAME_FIRST}}</a>
+
+      <ul class="nav__links" role="list">
+        <li><a href="#about"      class="nav__link" data-nav-section="about">About</a></li>
+        <li><a href="#experience" class="nav__link" data-nav-section="experience">Experience</a></li>
+        <li><a href="#projects"   class="nav__link" data-nav-section="projects">Projects</a></li>
+        <li><a href="#education"  class="nav__link" data-nav-section="education">Education</a></li>
+        <li><a href="#skills"     class="nav__link" data-nav-section="skills">Skills</a></li>
+        <li><a href="#fun"        class="nav__link" data-nav-section="fun">Beyond Work</a></li>
+      </ul>
+
+      <a href="#footer" class="btn btn--primary nav__cta">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="hero" aria-label="Introduction">
+      <div class="container">
+        <div class="hero__inner">
+
+          <div class="hero__text reveal">
+            <p class="hero__greeting">Hi, I'm</p>
+            <h1 class="hero__name">Tiffanie</h1>
+            <p class="hero__role">{{ROLE}}</p>
+            <p class="hero__mission">{{MISSION_LINE}}</p>
+
+            <div class="hero__social">
+              <a href="{{LINKEDIN_URL}}" class="hero__social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                  <rect x="2" y="9" width="4" height="12"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+              </a>
+              <a href="{{GITHUB_URL}}" class="hero__social-btn" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                </svg>
+              </a>
+              <a href="mailto:{{EMAIL}}" class="hero__social-btn" aria-label="Email">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                  <polyline points="22,6 12,13 2,6"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero__ctas">
+              <a href="{{CTA_PRIMARY_HREF}}" class="btn btn--primary">{{CTA_PRIMARY_LABEL}}</a>
+              <a href="{{CTA_SECONDARY_HREF}}" class="btn btn--secondary">{{CTA_SECONDARY_LABEL}}</a>
+            </div>
+          </div>
+
+          <div class="hero__avatar-wrap reveal" style="--delay: 150ms">
+            <img
+              src="{{AVATAR_SRC}}"
+              alt="{{AVATAR_ALT}}"
+              class="hero__avatar"
+              width="200"
+              height="200"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" aria-label="About me">
+      <div class="container">
+        <span class="section-label reveal">About</span>
+        <h2 class="section-title reveal" style="--delay: 80ms">A little about me</h2>
+
+        <div class="about__grid">
+          <div class="about__prose reveal" style="--delay: 120ms">
+            <p>{{ABOUT_PARAGRAPH_1}}</p>
+            <p>{{ABOUT_PARAGRAPH_2}}</p>
+          </div>
+
+          <aside aria-label="Quick facts">
+            <div class="quick-facts">
+              <div class="quick-fact reveal" style="--delay: 160ms">
+                <span class="quick-fact__text">{{QUICK_FACT_1}}</span>
+                <span class="quick-fact__emoji">{{QUICK_FACT_1_EMOJI}}</span>
+              </div>
+              <div class="quick-fact reveal" style="--delay: 200ms">
+                <span class="quick-fact__text">{{QUICK_FACT_2}}</span>
+                <span class="quick-fact__emoji">{{QUICK_FACT_2_EMOJI}}</span>
+              </div>
+              <div class="quick-fact reveal" style="--delay: 240ms">
+                <span class="quick-fact__text">{{QUICK_FACT_3}}</span>
+                <span class="quick-fact__emoji">{{QUICK_FACT_3_EMOJI}}</span>
+              </div>
+              <div class="quick-fact reveal" style="--delay: 280ms">
+                <span class="quick-fact__text">{{QUICK_FACT_4}}</span>
+                <span class="quick-fact__emoji">{{QUICK_FACT_4_EMOJI}}</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TECH STACK ICONS ===================== -->
+    <section id="tech-stack" aria-label="Tech stack">
+      <div class="container">
+        <span class="section-label reveal">Skills</span>
+        <h2 class="section-title reveal" style="--delay: 80ms">{{TECH_STACK_TITLE}}</h2>
+        <div class="tech-icons reveal" style="--delay: 160ms">
+          <img src="{{TECH_1_ICON}}" alt="{{TECH_1_NAME}}" class="tech-icon" title="{{TECH_1_NAME}}" />
+          <img src="{{TECH_2_ICON}}" alt="{{TECH_2_NAME}}" class="tech-icon" title="{{TECH_2_NAME}}" />
+          <img src="{{TECH_3_ICON}}" alt="{{TECH_3_NAME}}" class="tech-icon" title="{{TECH_3_NAME}}" />
+          <img src="{{TECH_4_ICON}}" alt="{{TECH_4_NAME}}" class="tech-icon" title="{{TECH_4_NAME}}" />
+          <img src="{{TECH_5_ICON}}" alt="{{TECH_5_NAME}}" class="tech-icon" title="{{TECH_5_NAME}}" />
+          <img src="{{TECH_6_ICON}}" alt="{{TECH_6_NAME}}" class="tech-icon" title="{{TECH_6_NAME}}" />
+          <img src="{{TECH_7_ICON}}" alt="{{TECH_7_NAME}}" class="tech-icon" title="{{TECH_7_NAME}}" />
+          <img src="{{TECH_8_ICON}}" alt="{{TECH_8_NAME}}" class="tech-icon" title="{{TECH_8_NAME}}" />
+          <img src="{{TECH_9_ICON}}" alt="{{TECH_9_NAME}}" class="tech-icon" title="{{TECH_9_NAME}}" />
+          <img src="{{TECH_10_ICON}}" alt="{{TECH_10_NAME}}" class="tech-icon" title="{{TECH_10_NAME}}" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section id="experience" aria-label="Work experience">
+      <div class="container">
+        <span class="section-label reveal">Experience</span>
+        <h2 class="section-title reveal" style="--delay: 80ms">Where I've worked</h2>
+
+        <!-- Job 1 -->
+        <article class="exp-card reveal" style="--delay: 100ms">
+          <div class="exp-card__header">
+            <img
+              src="{{EXP_1_LOGO_SRC}}"
+              alt="{{EXP_1_LOGO_ALT}}"
+              class="exp-card__logo"
+              width="44"
+              height="44"
+            />
+            <div class="exp-card__meta">
+              <div class="exp-card__company">{{EXP_1_COMPANY}}</div>
+              <div class="exp-card__title">{{EXP_1_TITLE}}</div>
+              <div class="exp-card__dates">
+                {{EXP_1_DATE_START}} – {{EXP_1_DATE_END}} &middot; {{EXP_1_LOCATION}}
+              </div>
+            </div>
+          </div>
+          <ul class="exp-card__bullets" aria-label="Highlights">
+            <li>{{EXP_1_BULLET_1}}</li>
+            <li>{{EXP_1_BULLET_2}}</li>
+            <li>{{EXP_1_BULLET_3}}</li>
+          </ul>
+          <ul
+            class="exp-card__more-bullets"
+            hidden
+            aria-label="Additional highlights"
+            data-more="{{EXP_1_BULLET_MORE}}"
+          ></ul>
+          <button
+            class="exp-card__toggle btn btn--ghost"
+            aria-expanded="false"
+            aria-controls="exp-1-more"
+          >
+            Show more <i class="exp-card__toggle-icon" aria-hidden="true">↓</i>
+          </button>
+        </article>
+
+        <!-- Job 2 -->
+        <article class="exp-card reveal" style="--delay: 180ms">
+          <div class="exp-card__header">
+            <img
+              src="{{EXP_2_LOGO_SRC}}"
+              alt="{{EXP_2_LOGO_ALT}}"
+              class="exp-card__logo"
+              width="44"
+              height="44"
+            />
+            <div class="exp-card__meta">
+              <div class="exp-card__company">{{EXP_2_COMPANY}}</div>
+              <div class="exp-card__title">{{EXP_2_TITLE}}</div>
+              <div class="exp-card__dates">
+                {{EXP_2_DATE_START}} – {{EXP_2_DATE_END}} &middot; {{EXP_2_LOCATION}}
+              </div>
+            </div>
+          </div>
+          <ul class="exp-card__bullets" aria-label="Highlights">
+            <li>{{EXP_2_BULLET_1}}</li>
+            <li>{{EXP_2_BULLET_2}}</li>
+            <li>{{EXP_2_BULLET_3}}</li>
+          </ul>
+          <ul
+            class="exp-card__more-bullets"
+            hidden
+            aria-label="Additional highlights"
+            data-more="{{EXP_2_BULLET_MORE}}"
+          ></ul>
+          <button
+            class="exp-card__toggle btn btn--ghost"
+            aria-expanded="false"
+            aria-controls="exp-2-more"
+          >
+            Show more <i class="exp-card__toggle-icon" aria-hidden="true">↓</i>
+          </button>
+        </article>
+
+        <!-- Job 3 -->
+        <article class="exp-card reveal" style="--delay: 260ms">
+          <div class="exp-card__header">
+            <img
+              src="{{EXP_3_LOGO_SRC}}"
+              alt="{{EXP_3_LOGO_ALT}}"
+              class="exp-card__logo"
+              width="44"
+              height="44"
+            />
+            <div class="exp-card__meta">
+              <div class="exp-card__company">{{EXP_3_COMPANY}}</div>
+              <div class="exp-card__title">{{EXP_3_TITLE}}</div>
+              <div class="exp-card__dates">
+                {{EXP_3_DATE_START}} – {{EXP_3_DATE_END}} &middot; {{EXP_3_LOCATION}}
+              </div>
+            </div>
+          </div>
+          <ul class="exp-card__bullets" aria-label="Highlights">
+            <li>{{EXP_3_BULLET_1}}</li>
+            <li>{{EXP_3_BULLET_2}}</li>
+            <li>{{EXP_3_BULLET_3}}</li>
+          </ul>
+          <ul
+            class="exp-card__more-bullets"
+            hidden
+            aria-label="Additional highlights"
+            data-more="{{EXP_3_BULLET_MORE}}"
+          ></ul>
+          <button
+            class="exp-card__toggle btn btn--ghost"
+            aria-expanded="false"
+            aria-controls="exp-3-more"
+          >
+            Show more <i class="exp-card__toggle-icon" aria-hidden="true">↓</i>
+          </button>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section id="projects" aria-label="Projects">
+      <div class="container">
+        <span class="section-label reveal">Projects</span>
+        <h2 class="section-title reveal" style="--delay: 80ms">Things I've built</h2>
+
+        <!-- Project 1 -->
+        <article class="proj-card reveal" style="--delay: 100ms">
+          <div class="proj-card__body">
+            <div class="proj-card__top">
+              <div class="proj-card__meta">
+                <h3 class="proj-card__title">{{PROJ_1_TITLE}}</h3>
+                <p class="proj-card__tagline">{{PROJ_1_TAGLINE}}</p>
+              </div>
+              <span class="proj-card__date">{{PROJ_1_DATE}}</span>
+            </div>
+            <div class="proj-card__image-wrap">
+              <img src="{{PROJ_1_IMG_SRC}}" alt="{{PROJ_1_IMG_ALT}}" class="proj-card__image" loading="lazy" />
+            </div>
+            <p class="proj-card__desc">{{PROJ_1_DESC}}</p>
+            <div class="proj-card__tags" data-skills="{{PROJ_1_TAGS}}"></div>
+            <a href="{{PROJ_1_LINK_HREF}}" class="btn btn--ghost proj-card__link" target="_blank" rel="noopener noreferrer">{{PROJ_1_LINK_LABEL}} →</a>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="proj-card reveal" style="--delay: 180ms">
+          <div class="proj-card__body">
+            <div class="proj-card__top">
+              <div class="proj-card__meta">
+                <h3 class="proj-card__title">{{PROJ_2_TITLE}}</h3>
+                <p class="proj-card__tagline">{{PROJ_2_TAGLINE}}</p>
+              </div>
+              <span class="proj-card__date">{{PROJ_2_DATE}}</span>
+            </div>
+            <div class="proj-card__image-wrap">
+              <img src="{{PROJ_2_IMG_SRC}}" alt="{{PROJ_2_IMG_ALT}}" class="proj-card__image" loading="lazy" />
+            </div>
+            <p class="proj-card__desc">{{PROJ_2_DESC}}</p>
+            <div class="proj-card__tags" data-skills="{{PROJ_2_TAGS}}"></div>
+            <a href="{{PROJ_2_LINK_HREF}}" class="btn btn--ghost proj-card__link" target="_blank" rel="noopener noreferrer">{{PROJ_2_LINK_LABEL}} →</a>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="proj-card reveal" style="--delay: 260ms">
+          <div class="proj-card__body">
+            <div class="proj-card__top">
+              <div class="proj-card__meta">
+                <h3 class="proj-card__title">{{PROJ_3_TITLE}}</h3>
+                <p class="proj-card__tagline">{{PROJ_3_TAGLINE}}</p>
+              </div>
+              <span class="proj-card__date">{{PROJ_3_DATE}}</span>
+            </div>
+            <div class="proj-card__image-wrap">
+              <img src="{{PROJ_3_IMG_SRC}}" alt="{{PROJ_3_IMG_ALT}}" class="proj-card__image" loading="lazy" />
+            </div>
+            <p class="proj-card__desc">{{PROJ_3_DESC}}</p>
+            <div class="proj-card__tags" data-skills="{{PROJ_3_TAGS}}"></div>
+            <a href="{{PROJ_3_LINK_HREF}}" class="btn btn--ghost proj-card__link" target="_blank" rel="noopener noreferrer">{{PROJ_3_LINK_LABEL}} →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section id="education" aria-label="Education">
+      <div class="container">
+        <span class="section-label reveal">Education</span>
+        <h2 class="section-title reveal" style="--delay: 80ms">Where I studied</h2>
+
+        <!-- School 1 -->
+        <article class="edu-card reveal" style="--delay: 100ms">
+          <div class="edu-card__header">
+            <img
+              src="{{EDU_1_LOGO_SRC}}"
+              alt="{{EDU_1_LOGO_ALT}}"
+              class="edu-card__logo"
+              width="44"
+              height="44"
+            />
+            <div class="edu-card__meta">
+              <div class="edu-card__school">{{EDU_1_SCHOOL}}</div>
+              <div class="edu-card__degree">{{EDU_1_DEGREE}}, {{EDU_1_FIELD}}</div>
+              <div class="edu-card__dates">{{EDU_1_DATE_START}} – {{EDU_1_DATE_END}}</div>
+            </div>
+          </div>
+          <p class="edu-card__notes">{{EDU_1_NOTES}}</p>
+        </article>
+
+        <!-- School 2 -->
+        <article class="edu-card reveal" style="--delay: 180ms">
+          <div class="edu-card__header">
+            <img
+              src="{{EDU_2_LOGO_SRC}}"
+              alt="{{EDU_2_LOGO_ALT}}"
+              class="edu-card__logo"
+              width="44"
+              height="44"
+            />
+            <div class="edu-card__meta">
+              <div class="edu-card__school">{{EDU_2_SCHOOL}}</div>
+              <div class="edu-card__degree">{{EDU_2_DEGREE}}, {{EDU_2_FIELD}}</div>
+              <div class="edu-card__dates">{{EDU_2_DATE_START}} – {{EDU_2_DATE_END}}</div>
+            </div>
+          </div>
+          <p class="edu-card__notes">{{EDU_2_NOTES}}</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section id="skills" aria-label="Skills">
+      <div class="container--wide">
+        <div class="container" style="max-width: 100%; padding: 0">
+          <span class="section-label reveal">Skills</span>
+          <h2 class="section-title reveal" style="--delay: 80ms">What I work with</h2>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-group reveal" style="--delay: 100ms">
+            <div class="skill-group__label">Product &amp; Strategy</div>
+            <div class="skill-group__pills" data-skills="Roadmapping, A/B Testing, User Research, OKRs, Agile, Jira"></div>
+          </div>
+
+          <div class="skill-group reveal" style="--delay: 160ms">
+            <div class="skill-group__label">Languages</div>
+            <div class="skill-group__pills" data-skills="Python, SQL, JavaScript, TypeScript, R, HTML, CSS"></div>
+          </div>
+
+          <div class="skill-group reveal" style="--delay: 220ms">
+            <div class="skill-group__label">Frameworks &amp; Libraries</div>
+            <div class="skill-group__pills" data-skills="React, Node.js, FastAPI, pandas, scikit-learn, dbt"></div>
+          </div>
+
+          <div class="skill-group reveal" style="--delay: 280ms">
+            <div class="skill-group__label">Tools &amp; Platforms</div>
+            <div class="skill-group__pills" data-skills="Azure, GitHub, Figma, Tableau, Snowflake, Databricks, VS Code"></div>
+          </div>
+
+          <div class="skill-group reveal" style="--delay: 340ms">
+            <div class="skill-group__label">Soft Skills</div>
+            <div class="skill-group__pills" data-skills="Communication, Leadership, Stakeholder Management, Problem Solving, Collaboration"></div>
+          </div>
+
+          <div class="skill-group reveal" style="--delay: 400ms">
+            <div class="skill-group__label">Languages Spoken</div>
+            <div class="language-list language-list--compact">
+              <div class="language-row">
+                <span class="language-row__name">{{LANG_1_NAME}}</span>
+                <span class="language-row__level">{{LANG_1_LEVEL}}</span>
+              </div>
+              <div class="language-row">
+                <span class="language-row__name">{{LANG_2_NAME}}</span>
+                <span class="language-row__level">{{LANG_2_LEVEL}}</span>
+              </div>
+              <div class="language-row">
+                <span class="language-row__name">{{LANG_3_NAME}}</span>
+                <span class="language-row__level">{{LANG_3_LEVEL}}</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FUN ===================== -->
+    <section id="fun" aria-label="Fun facts">
+      <div class="container--wide">
+        <div class="container" style="max-width: 100%; padding: 0">
+          <span class="section-label reveal">Beyond Work</span>
+          <h2 class="section-title reveal" style="--delay: 80ms">A few things I love</h2>
+        </div>
+
+        <div class="fun-grid">
+          <div class="fun-card reveal" style="--delay: 100ms">
+            <div class="fun-card__photo-wrap">
+              <img class="fun-card__photo" src="{{FUN_1_PHOTO}}" alt="{{FUN_1_TITLE}}" />
+            </div>
+            <div class="fun-card__body">
+              <div class="fun-card__icon" aria-hidden="true">{{FUN_1_ICON}}</div>
+              <div class="fun-card__title">{{FUN_1_TITLE}}</div>
+              <p class="fun-card__desc">{{FUN_1_DESC}}</p>
+            </div>
+          </div>
+          <div class="fun-card reveal" style="--delay: 160ms">
+            <div class="fun-card__photo-wrap">
+              <img class="fun-card__photo" src="{{FUN_2_PHOTO}}" alt="{{FUN_2_TITLE}}" />
+            </div>
+            <div class="fun-card__body">
+              <div class="fun-card__icon" aria-hidden="true">{{FUN_2_ICON}}</div>
+              <div class="fun-card__title">{{FUN_2_TITLE}}</div>
+              <p class="fun-card__desc">{{FUN_2_DESC}}</p>
+            </div>
+          </div>
+          <div class="fun-card reveal" style="--delay: 220ms">
+            <div class="fun-card__photo-wrap">
+              <img class="fun-card__photo" src="{{FUN_3_PHOTO}}" alt="{{FUN_3_TITLE}}" />
+            </div>
+            <div class="fun-card__body">
+              <div class="fun-card__icon" aria-hidden="true">{{FUN_3_ICON}}</div>
+              <div class="fun-card__title">{{FUN_3_TITLE}}</div>
+              <p class="fun-card__desc">{{FUN_3_DESC}}</p>
+            </div>
+          </div>
+          <div class="fun-card reveal" style="--delay: 280ms">
+            <div class="fun-card__photo-wrap">
+              <img class="fun-card__photo" src="{{FUN_4_PHOTO}}" alt="{{FUN_4_TITLE}}" />
+            </div>
+            <div class="fun-card__body">
+              <div class="fun-card__icon" aria-hidden="true">{{FUN_4_ICON}}</div>
+              <div class="fun-card__title">{{FUN_4_TITLE}}</div>
+              <p class="fun-card__desc">{{FUN_4_DESC}}</p>
+            </div>
+          </div>
+          <div class="fun-card reveal" style="--delay: 340ms">
+            <div class="fun-card__photo-wrap">
+              <img class="fun-card__photo" src="{{FUN_5_PHOTO}}" alt="{{FUN_5_TITLE}}" />
+            </div>
+            <div class="fun-card__body">
+              <div class="fun-card__icon" aria-hidden="true">{{FUN_5_ICON}}</div>
+              <div class="fun-card__title">{{FUN_5_TITLE}}</div>
+              <p class="fun-card__desc">{{FUN_5_DESC}}</p>
+            </div>
+          </div>
+          <div class="fun-card reveal" style="--delay: 400ms">
+            <div class="fun-card__photo-wrap">
+              <img class="fun-card__photo" src="{{FUN_6_PHOTO}}" alt="{{FUN_6_TITLE}}" />
+            </div>
+            <div class="fun-card__body">
+              <div class="fun-card__icon" aria-hidden="true">{{FUN_6_ICON}}</div>
+              <div class="fun-card__title">{{FUN_6_TITLE}}</div>
+              <p class="fun-card__desc">{{FUN_6_DESC}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="footer" aria-label="Footer">
+    <div class="container">
+      <p class="footer__closing">{{FOOTER_CLOSING_LINE}}</p>
+
+      <nav class="footer__links" aria-label="Social links">
+        <a
+          href="{{LINKEDIN_URL}}"
+          class="footer__link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn profile"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+          LinkedIn
+        </a>
+
+        <a
+          href="{{GITHUB_URL}}"
+          class="footer__link"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub profile"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+          </svg>
+          GitHub
+        </a>
+
+        <a
+          href="mailto:{{EMAIL}}"
+          class="footer__link"
+          aria-label="Send email"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          {{EMAIL}}
+        </a>
+      </nav>
+
+      <p class="footer__copyright">&copy; {{FOOTER_COPYRIGHT_YEAR}} {{NAME}}. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
