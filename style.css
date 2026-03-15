@@ -793,8 +793,8 @@ body {
   margin-top: calc(var(--space-6) * -1);
   margin-bottom: var(--space-2);
   border-radius: var(--radius-md) var(--radius-md) 0 0;
-  overflow: hidden;
-  aspect-ratio: 16/7;
+  overflow: visible;
+  aspect-ratio: auto;
   background: var(--color-surface-2);
   flex-shrink: 0;
 }
