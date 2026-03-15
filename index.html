@@ -25,7 +25,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image" href="assets/profile/Emoji.png" />
 
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -34,7 +34,8 @@
   <!-- ===================== NAV ===================== -->
   <nav class="nav" id="site-nav" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="#hero" class="nav__name">{{NAME_FIRST}}</a>
+      <img src="assets/photos/profile/Emoji.png"/>
+      <a href="#hero" class="nav__name">Tiffanie Choi</a>
 
       <ul class="nav__links" role="list">
         <li><a href="#about"      class="nav__link" data-nav-section="about">About</a></li>
@@ -45,7 +46,7 @@
         <li><a href="#fun"        class="nav__link" data-nav-section="fun">Beyond Work</a></li>
       </ul>
 
-      <a href="#footer" class="btn btn--primary nav__cta">Contact</a>
+      <a href="mailto:tchoi23@umd.edu"  class="btn btn--primary nav__cta">Contact</a>
     </div>
   </nav>
 
@@ -59,7 +60,7 @@
           <div class="hero__text reveal">
             <p class="hero__greeting">Hi, I'm</p>
             <h1 class="hero__name">Tiffanie</h1>
-            <p class="hero__role">Product Manager @ Microsoft</p>
+            <p class="hero__role">Product Manager II @ Microsoft</p>
 
             <div class="hero__social">
               <a href="https://www.linkedin.com/in/tiffaniexchoi/" class="hero__social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -83,14 +84,12 @@
             </div>
 
             <div class="hero__ctas">
-              <a href="{{CTA_PRIMARY_HREF}}" class="btn btn--primary">Contact Me</a>
-              <a href="{{CTA_SECONDARY_HREF}}" class="btn btn--secondary">Resume</a>
             </div>
           </div>
 
           <div class="hero__avatar-wrap reveal" style="--delay: 150ms">
             <img
-              src="/assets/photos/github_propic.png"
+              src="assets/profile/github_propic.png"
               class="hero__avatar"
               width="200"
               height="200"
@@ -109,27 +108,27 @@
 
         <div class="about__grid">
           <div class="about__prose reveal" style="--delay: 120ms">
-            <p>{{ABOUT_PARAGRAPH_1}}</p>
-            <p>{{ABOUT_PARAGRAPH_2}}</p>
+            <p>MD Raised, in seattle now</p>
+            <p>PM/SWE Hyrbid Experience</p>
           </div>
 
           <aside aria-label="Quick facts">
             <div class="quick-facts">
               <div class="quick-fact reveal" style="--delay: 160ms">
-                <span class="quick-fact__text">{{QUICK_FACT_1}}</span>
-                <span class="quick-fact__emoji">{{QUICK_FACT_1_EMOJI}}</span>
+                <span class="quick-fact__text">Aries</span>
+                <span class="quick-fact__emoji">♈</span>
               </div>
               <div class="quick-fact reveal" style="--delay: 200ms">
-                <span class="quick-fact__text">{{QUICK_FACT_2}}</span>
-                <span class="quick-fact__emoji">{{QUICK_FACT_2_EMOJI}}</span>
+                <span class="quick-fact__text">Cat Person</span>
+                <span class="quick-fact__emoji">🐈</span>
               </div>
               <div class="quick-fact reveal" style="--delay: 240ms">
-                <span class="quick-fact__text">{{QUICK_FACT_3}}</span>
-                <span class="quick-fact__emoji">{{QUICK_FACT_3_EMOJI}}</span>
+                <span class="quick-fact__text">Learning Tennis</span>
+                <span class="quick-fact__emoji">🎾</span>
               </div>
               <div class="quick-fact reveal" style="--delay: 280ms">
-                <span class="quick-fact__text">{{QUICK_FACT_4}}</span>
-                <span class="quick-fact__emoji">{{QUICK_FACT_4_EMOJI}}</span>
+                <span class="quick-fact__text">Aspiring Chef</span>
+                <span class="quick-fact__emoji">🍴</span>
               </div>
             </div>
           </aside>
@@ -141,18 +140,21 @@
     <section id="tech-stack" aria-label="Tech stack">
       <div class="container">
         <span class="section-label reveal">Skills</span>
-        <h2 class="section-title reveal" style="--delay: 80ms">{{TECH_STACK_TITLE}}</h2>
+        <h2 class="section-title reveal" style="--delay: 80ms">Tech Stack</h2>
         <div class="tech-icons reveal" style="--delay: 160ms">
-          <img src="https://cdn.simpleicons.org/python" alt="Python" class="tech-icon" title="Python" />
-          <img src="https://cdn.simpleicons.org/javascript" alt="JavaScript" class="tech-icon" title="JavaScript" />
-          <img src="https://cdn.simpleicons.org/typescript" alt="TypeScript" class="tech-icon" title="TypeScript" />
-          <img src="https://cdn.simpleicons.org/react" alt="React" class="tech-icon" title="React" />
-          <img src="https://cdn.simpleicons.org/microsoftazure" alt="Azure" class="tech-icon" title="Azure" />
-          <img src="https://cdn.simpleicons.org/github" alt="GitHub" class="tech-icon" title="GitHub" />
-          <img src="https://cdn.simpleicons.org/figma" alt="Figma" class="tech-icon" title="Figma" />
-          <img src="https://cdn.simpleicons.org/tableau" alt="Tableau" class="tech-icon" title="Tableau" />
-          <img src="https://cdn.simpleicons.org/snowflake" alt="Snowflake" class="tech-icon" title="Snowflake" />
-          <img src="https://cdn.simpleicons.org/databricks" alt="Databricks" class="tech-icon" title="Databricks" />
+          <img src="assets/photos/flaticon/java.png" alt="Java" class="tech-icon" title="Java" />
+          <img src="assets/photos/flaticon/python.png" alt="python" class="tech-icon" title="Python" />
+          <img src="assets/photos/flaticon/c-.png" alt="c++" class="tech-icon" title="C++" />
+          <img src="assets/photos/flaticon/c-sharp.png" alt="c-sharp" class="tech-icon" title="c-sharp" />
+          <img src="assets/photos/flaticon/swift.png" alt="Swift" class="tech-icon" title="Swift" />
+          <img src="assets/photos/flaticon/js.png" alt="JS" class="tech-icon" title="JS"/>
+          <img src="assets/photos/flaticon/html.png" alt="html" class="tech-icon" title="html" />
+          <img src="assets/photos/flaticon/css.png" alt="css" class="tech-icon" title="css" />
+          <img src="assets/photos/flaticon/ruby.png" alt="ruby" class="tech-icon" title="ruby" />
+          <img src="assets/photos/flaticon/ocaml.png" alt="ocaml" class="tech-icon" title="ocaml" />
+          <img src="assets/photos/flaticon/typescript.png" alt="ts" class="tech-icon" title="ts" />
+          <img src="assets/photos/flaticon/sql-server.png" alt="sql" class="tech-icon" title="sql" />
+          <img src="assets/photos/flaticon/figma.png" alt="figma" class="tech-icon" title="figma" />
         </div>
       </div>
     </section>
@@ -167,24 +169,25 @@
         <article class="exp-card reveal" style="--delay: 100ms">
           <div class="exp-card__header">
             <img
-              src="{{EXP_1_LOGO_SRC}}"
-              alt="{{EXP_1_LOGO_ALT}}"
+              src="assets/photos/jobs/microsoft.png"
+              alt="Microsoft"
               class="exp-card__logo"
               width="44"
               height="44"
             />
             <div class="exp-card__meta">
-              <div class="exp-card__company">{{EXP_1_COMPANY}}</div>
-              <div class="exp-card__title">{{EXP_1_TITLE}}</div>
+              <div class="exp-card__company">Microsoft</div>
+              <div class="exp-card__title">Product Manager II</div>
               <div class="exp-card__dates">
-                {{EXP_1_DATE_START}} – {{EXP_1_DATE_END}} &middot; {{EXP_1_LOCATION}}
+                <p>August 2023 – Present</p>
+                <p>Seattle, WA</p>
               </div>
             </div>
           </div>
           <ul class="exp-card__bullets" aria-label="Highlights">
-            <li>{{EXP_1_BULLET_1}}</li>
-            <li>{{EXP_1_BULLET_2}}</li>
-            <li>{{EXP_1_BULLET_3}}</li>
+            <li>$1.2M annual savings achieved by delivering 100% dashboard parity across sovereign cloud environments for M365 services, reducing troubleshooting time by 99% and improving service reliability.</li>
+            <li>$6.7B revenue opportunity enabled by driving readiness for France and Germany cloud deployments, ensuring timely market entry and compliance for regulated regions to support Microsoft’s sovereign cloud strategy.</li>
+            <li>$594K annual savings and 5,940 engineering hours eliminated by creating a centralized dashboard inventory covering 75+ Microsoft services, delivering 100% monitoring coverage and removing duplicate configurations.</li>
           </ul>
           <ul
             class="exp-card__more-bullets"
@@ -205,24 +208,24 @@
         <article class="exp-card reveal" style="--delay: 180ms">
           <div class="exp-card__header">
             <img
-              src="{{EXP_2_LOGO_SRC}}"
-              alt="{{EXP_2_LOGO_ALT}}"
+              src="assets/photos/jobs/chewy.png"
+              alt="Chewy"
               class="exp-card__logo"
               width="44"
               height="44"
             />
             <div class="exp-card__meta">
-              <div class="exp-card__company">{{EXP_2_COMPANY}}</div>
-              <div class="exp-card__title">{{EXP_2_TITLE}}</div>
+              <div class="exp-card__company">Chewy</div>
+              <div class="exp-card__title">Software Engineer &middot; Intern</div>
               <div class="exp-card__dates">
-                {{EXP_2_DATE_START}} – {{EXP_2_DATE_END}} &middot; {{EXP_2_LOCATION}}
+                <p>June 2021 – August 2021</p>
+                <p>Boston, MA</p>
               </div>
             </div>
           </div>
           <ul class="exp-card__bullets" aria-label="Highlights">
-            <li>{{EXP_2_BULLET_1}}</li>
-            <li>{{EXP_2_BULLET_2}}</li>
-            <li>{{EXP_2_BULLET_3}}</li>
+            <li>Full-stack development on consumer-facing Pet-Health pages on chewy.com. </li>
+            <li>99% decrease in onboarding time (14 days to 5 minutes) through Bash automation for local full-stack environments, enabling rapid developer ramp-up and accelerating feature delivery.</li>
           </ul>
           <ul
             class="exp-card__more-bullets"
@@ -243,24 +246,24 @@
         <article class="exp-card reveal" style="--delay: 260ms">
           <div class="exp-card__header">
             <img
-              src="{{EXP_3_LOGO_SRC}}"
-              alt="{{EXP_3_LOGO_ALT}}"
+              src="assets/photos/jobs/stc.png"
+              alt="STC"
               class="exp-card__logo"
               width="44"
               height="44"
             />
             <div class="exp-card__meta">
-              <div class="exp-card__company">{{EXP_3_COMPANY}}</div>
-              <div class="exp-card__title">{{EXP_3_TITLE}}</div>
+              <div class="exp-card__company">Science and Technology Corporation</div>
+              <div class="exp-card__title">Software Engineer &middot; Part-Time</div>
               <div class="exp-card__dates">
-                {{EXP_3_DATE_START}} – {{EXP_3_DATE_END}} &middot; {{EXP_3_LOCATION}}
+                <p>July 2020 – August 2023</p>
+                <p>Columbia, MD</p>
               </div>
             </div>
           </div>
           <ul class="exp-card__bullets" aria-label="Highlights">
-            <li>{{EXP_3_BULLET_1}}</li>
-            <li>{{EXP_3_BULLET_2}}</li>
-            <li>{{EXP_3_BULLET_3}}</li>
+            <li>NOAA & NASA Satellite Missions </li>
+            <li> 1,040 hours saved annually by automating NASA satellite verification with Python, eliminating 20 hours of manual work per week and saving $1M per year for a 10-person team.</li>
           </ul>
           <ul
             class="exp-card__more-bullets"
@@ -272,6 +275,44 @@
             class="exp-card__toggle btn btn--ghost"
             aria-expanded="false"
             aria-controls="exp-3-more"
+          >
+            Show more <i class="exp-card__toggle-icon" aria-hidden="true">↓</i>
+          </button>
+        </article>
+
+        <!-- Job 4 -->
+        <article class="exp-card reveal" style="--delay: 180ms">
+          <div class="exp-card__header">
+            <img
+              src="assets/photos/jobs/chewy.png"
+              alt="Chewy"
+              class="exp-card__logo"
+              width="44"
+              height="44"
+            />
+            <div class="exp-card__meta">
+              <div class="exp-card__company">Johns Hopkins Applied Physics Lab</div>
+              <div class="exp-card__title">Researcher &middot; Intern</div>
+              <div class="exp-card__dates">
+                <p>September 2017 – June 2019</p>
+                <p>Laurel, MD</p>
+              </div>
+            </div>
+          </div>
+          <ul class="exp-card__bullets" aria-label="Highlights">
+            <li>Planetary Geology Researcher for Chang’E-3 Lunar Missions</li>
+            <li>5,200  hours saved annually by building a filter spectrum convolution program in IDL to convert Apollo missions 12- 15 samples from RGB to Bayer spectrum using PCAM filters.</li>
+          </ul>
+          <ul
+            class="exp-card__more-bullets"
+            hidden
+            aria-label="Additional highlights"
+            data-more="{{EXP_2_BULLET_MORE}}"
+          ></ul>
+          <button
+            class="exp-card__toggle btn btn--ghost"
+            aria-expanded="false"
+            aria-controls="exp-2-more"
           >
             Show more <i class="exp-card__toggle-icon" aria-hidden="true">↓</i>
           </button>
@@ -291,17 +332,18 @@
           <div class="proj-card__body">
             <div class="proj-card__top">
               <div class="proj-card__meta">
-                <h3 class="proj-card__title">{{PROJ_1_TITLE}}</h3>
-                <p class="proj-card__tagline">{{PROJ_1_TAGLINE}}</p>
+                <h3 class="proj-card__title">F1 Live Desktop Wallpaper </h3>
+                <p class="proj-card__tagline">Live Race Schedule in Your Timezone + Championship Standings</p>
               </div>
-              <span class="proj-card__date">{{PROJ_1_DATE}}</span>
+              <span class="proj-card__date">2026</span>
+              <p></p>
             </div>
             <div class="proj-card__image-wrap">
-              <img src="{{PROJ_1_IMG_SRC}}" alt="{{PROJ_1_IMG_ALT}}" class="proj-card__image" loading="lazy" />
+              <img src="assets/photos/projects/f1.png" alt="F1 Live Desktop Background" class="proj-card__image" loading="lazy" />
             </div>
-            <p class="proj-card__desc">{{PROJ_1_DESC}}</p>
+            <p class="proj-card__desc">A desktop wallpaper that automatically shows the next Formula 1 race weekend with session times in your local timezone and current championship standings. One setup and it lasts forever. 🏁</p>
             <div class="proj-card__tags" data-skills="{{PROJ_1_TAGS}}"></div>
-            <a href="{{PROJ_1_LINK_HREF}}" class="btn btn--ghost proj-card__link" target="_blank" rel="noopener noreferrer">{{PROJ_1_LINK_LABEL}} →</a>
+            <a href="https://github.com/tiffaniechoi/f1-live-wallpaper" class="btn btn--ghost proj-card__link" target="_blank" rel="noopener noreferrer">→ View Project Repo</a>
           </div>
         </article>
 
@@ -310,17 +352,19 @@
           <div class="proj-card__body">
             <div class="proj-card__top">
               <div class="proj-card__meta">
-                <h3 class="proj-card__title">{{PROJ_2_TITLE}}</h3>
-                <p class="proj-card__tagline">{{PROJ_2_TAGLINE}}</p>
+                <h3 class="proj-card__title">Microsoft Vacation Planner for RTO Policy</h3>
+                <p class="proj-card__tagline">Plan your vacation while staying RTO-compliant.</p>
               </div>
-              <span class="proj-card__date">{{PROJ_2_DATE}}</span>
+              <span class="proj-card__date">2026</span>
+              <p></p>
             </div>
             <div class="proj-card__image-wrap">
-              <img src="{{PROJ_2_IMG_SRC}}" alt="{{PROJ_2_IMG_ALT}}" class="proj-card__image" loading="lazy" />
+              <img src="assets/photos/projects/rto.png" alt="Microsoft Vacation Planner Site" class="proj-card__image" loading="lazy" />
             </div>
-            <p class="proj-card__desc">{{PROJ_2_DESC}}</p>
+            <p class="proj-card__desc">This is a personal tool to help Microsoft employees plan their vacation while staying compliant with Return-to-Office requirements.</p>
             <div class="proj-card__tags" data-skills="{{PROJ_2_TAGS}}"></div>
-            <a href="{{PROJ_2_LINK_HREF}}" class="btn btn--ghost proj-card__link" target="_blank" rel="noopener noreferrer">{{PROJ_2_LINK_LABEL}} →</a>
+            <a href="https://msft-rto-planner.vercel.app/" class="btn btn--ghost proj-card__link" target="_blank" rel="noopener noreferrer">→ View Website</a>
+            <a href="https://github.com/tiffaniechoi/Microsoft-Vacation-Planner-for-RTO-Compliance" class="btn btn--ghost proj-card__link" target="_blank" rel="noopener noreferrer">→ View Project Repo</a>
           </div>
         </article>
 
@@ -356,40 +400,21 @@
         <article class="edu-card reveal" style="--delay: 100ms">
           <div class="edu-card__header">
             <img
-              src="{{EDU_1_LOGO_SRC}}"
-              alt="{{EDU_1_LOGO_ALT}}"
+              src="assets/photos/school/umd.png"
+              alt="UMD"
               class="edu-card__logo"
               width="44"
               height="44"
             />
             <div class="edu-card__meta">
-              <div class="edu-card__school">{{EDU_1_SCHOOL}}</div>
-              <div class="edu-card__degree">{{EDU_1_DEGREE}}, {{EDU_1_FIELD}}</div>
-              <div class="edu-card__dates">{{EDU_1_DATE_START}} – {{EDU_1_DATE_END}}</div>
+              <div class="edu-card__school">University of Maryland</div>
+              <div class="edu-card__degree">Bachelors, Computer Science</div>
+              <div class="edu-card__dates">Business Concentration</div>
+              <div class="edu-card__dates">2019– 2023</div>
             </div>
           </div>
-          <p class="edu-card__notes">{{EDU_1_NOTES}}</p>
+          <p class="edu-card__notes">Activities and societies: QUEST Honors Program, The Iribe Initiative for Inclusion and Diversity in Computing: Peer Mentor, Scholars Peer Mentor, STS Scholars, The Association for Women in Computing, Asian American Student Union: Social Chair, Technica Hackathon (Organizer), Bitcamp Hackathon (Organizer), Survivor</p>
         </article>
-
-        <!-- School 2 -->
-        <article class="edu-card reveal" style="--delay: 180ms">
-          <div class="edu-card__header">
-            <img
-              src="{{EDU_2_LOGO_SRC}}"
-              alt="{{EDU_2_LOGO_ALT}}"
-              class="edu-card__logo"
-              width="44"
-              height="44"
-            />
-            <div class="edu-card__meta">
-              <div class="edu-card__school">{{EDU_2_SCHOOL}}</div>
-              <div class="edu-card__degree">{{EDU_2_DEGREE}}, {{EDU_2_FIELD}}</div>
-              <div class="edu-card__dates">{{EDU_2_DATE_START}} – {{EDU_2_DATE_END}}</div>
-            </div>
-          </div>
-          <p class="edu-card__notes">{{EDU_2_NOTES}}</p>
-        </article>
-
       </div>
     </section>
 
@@ -432,16 +457,12 @@
             <div class="skill-group__label">Languages Spoken</div>
             <div class="language-list language-list--compact">
               <div class="language-row">
-                <span class="language-row__name">{{LANG_1_NAME}}</span>
-                <span class="language-row__level">{{LANG_1_LEVEL}}</span>
+                <span class="language-row__name">English</span>
+                <span class="language-row__level">Fluent</span>
               </div>
               <div class="language-row">
-                <span class="language-row__name">{{LANG_2_NAME}}</span>
-                <span class="language-row__level">{{LANG_2_LEVEL}}</span>
-              </div>
-              <div class="language-row">
-                <span class="language-row__name">{{LANG_3_NAME}}</span>
-                <span class="language-row__level">{{LANG_3_LEVEL}}</span>
+                <span class="language-row__name">Cantonese</span>
+                <span class="language-row__level">Conversational</span>
               </div>
             </div>
           </div>
@@ -461,62 +482,62 @@
         <div class="fun-grid">
           <div class="fun-card reveal" style="--delay: 100ms">
             <div class="fun-card__photo-wrap">
-              <img class="fun-card__photo" src="{{FUN_1_PHOTO}}" alt="{{FUN_1_TITLE}}" />
+              <img class="fun-card__photo" src="assets/photos/polaroids/wtrek.jpg" alt="W Trek" />
             </div>
             <div class="fun-card__body">
-              <div class="fun-card__icon" aria-hidden="true">🎵</div>
-              <div class="fun-card__title">{{FUN_1_TITLE}}</div>
-              <p class="fun-card__desc">{{FUN_1_DESC}}</p>
+              <div class="fun-card__icon" aria-hidden="true">🏔</div>
+              <div class="fun-card__title">W Trek</div>
+              <p class="fun-card__desc">Patagonia</p>
             </div>
           </div>
           <div class="fun-card reveal" style="--delay: 160ms">
             <div class="fun-card__photo-wrap">
-              <img class="fun-card__photo" src="{{FUN_2_PHOTO}}" alt="{{FUN_2_TITLE}}" />
+              <img class="fun-card__photo" src="assets/photos/polaroids/desert.jpg" alt="Atacama" />
             </div>
             <div class="fun-card__body">
-              <div class="fun-card__icon" aria-hidden="true">🎨</div>
-              <div class="fun-card__title">{{FUN_2_TITLE}}</div>
-              <p class="fun-card__desc">{{FUN_2_DESC}}</p>
+              <div class="fun-card__icon" aria-hidden="true">🏜</div>
+              <div class="fun-card__title">Atacama Desert</div>
+              <p class="fun-card__desc">Chile</p>
             </div>
           </div>
           <div class="fun-card reveal" style="--delay: 220ms">
             <div class="fun-card__photo-wrap">
-              <img class="fun-card__photo" src="{{FUN_3_PHOTO}}" alt="{{FUN_3_TITLE}}" />
+              <img class="fun-card__photo" src="assets/photos/polaroids/penguin.jpg" alt="Penguins" />
             </div>
             <div class="fun-card__body">
-              <div class="fun-card__icon" aria-hidden="true">📚</div>
-              <div class="fun-card__title">{{FUN_3_TITLE}}</div>
-              <p class="fun-card__desc">{{FUN_3_DESC}}</p>
+              <div class="fun-card__icon" aria-hidden="true">🐧</div>
+              <div class="fun-card__title">Penguins</div>
+              <p class="fun-card__desc">Punta Arenas</p>
             </div>
           </div>
           <div class="fun-card reveal" style="--delay: 280ms">
             <div class="fun-card__photo-wrap">
-              <img class="fun-card__photo" src="{{FUN_4_PHOTO}}" alt="{{FUN_4_TITLE}}" />
+              <img class="fun-card__photo" src="assets/photos/polaroids/momo.jpg" alt="Momo" />
             </div>
             <div class="fun-card__body">
-              <div class="fun-card__icon" aria-hidden="true">🌿</div>
-              <div class="fun-card__title">{{FUN_4_TITLE}}</div>
-              <p class="fun-card__desc">{{FUN_4_DESC}}</p>
+              <div class="fun-card__icon" aria-hidden="true">🐈</div>
+              <div class="fun-card__title">Momo</div>
+              <p class="fun-card__desc">My son</p>
             </div>
           </div>
           <div class="fun-card reveal" style="--delay: 340ms">
             <div class="fun-card__photo-wrap">
-              <img class="fun-card__photo" src="{{FUN_5_PHOTO}}" alt="{{FUN_5_TITLE}}" />
+              <img class="fun-card__photo" src="assets/photos/polaroids/momo_xmas.jpg" alt="Momo Xmas" />
             </div>
             <div class="fun-card__body">
-              <div class="fun-card__icon" aria-hidden="true">✈️</div>
-              <div class="fun-card__title">{{FUN_5_TITLE}}</div>
-              <p class="fun-card__desc">{{FUN_5_DESC}}</p>
+              <div class="fun-card__icon" aria-hidden="true">🎄</div>
+              <div class="fun-card__title">Momo</div>
+              <p class="fun-card__desc">Momo celebrating Christmas</p>
             </div>
           </div>
           <div class="fun-card reveal" style="--delay: 400ms">
             <div class="fun-card__photo-wrap">
-              <img class="fun-card__photo" src="{{FUN_6_PHOTO}}" alt="{{FUN_6_TITLE}}" />
+              <img class="fun-card__photo" src="assets/photos/polaroids/atacama.jpg" alt="atacama selfie" />
             </div>
             <div class="fun-card__body">
-              <div class="fun-card__icon" aria-hidden="true">🍳</div>
-              <div class="fun-card__title">{{FUN_6_TITLE}}</div>
-              <p class="fun-card__desc">{{FUN_6_DESC}}</p>
+              <div class="fun-card__icon" aria-hidden="true">🌄</div>
+              <div class="fun-card__title">Atacama Desert Part 2</div>
+              <p class="fun-card__desc">Chile</p>
             </div>
           </div>
         </div>
@@ -528,11 +549,9 @@
   <!-- ===================== FOOTER ===================== -->
   <footer class="footer" id="footer" aria-label="Footer">
     <div class="container">
-      <p class="footer__closing">{{FOOTER_CLOSING_LINE}}</p>
-
       <nav class="footer__links" aria-label="Social links">
         <a
-          href="{{LINKEDIN_URL}}"
+          href="https://www.linkedin.com/in/tiffaniexchoi/"
           class="footer__link"
           target="_blank"
           rel="noopener noreferrer"
@@ -547,7 +566,7 @@
         </a>
 
         <a
-          href="{{GITHUB_URL}}"
+          href="https://github.com/tiffaniechoi"
           class="footer__link"
           target="_blank"
           rel="noopener noreferrer"
@@ -560,7 +579,7 @@
         </a>
 
         <a
-          href="mailto:{{EMAIL}}"
+          href="mailto:tchoi23@umd.edu" 
           class="footer__link"
           aria-label="Send email"
         >
@@ -568,11 +587,10 @@
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
             <polyline points="22,6 12,13 2,6"/>
           </svg>
-          {{EMAIL}}
+          Email
         </a>
       </nav>
 
-      <p class="footer__copyright">&copy; {{FOOTER_COPYRIGHT_YEAR}} {{NAME}}. All rights reserved.</p>
     </div>
   </footer>
 
