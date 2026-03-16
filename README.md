@@ -1,7 +1,6 @@
 # Tiffanie Choi — Personal Portfolio
 
-Hi! This is the source code for my personal portfolio site. I built it from scratch with vanilla HTML, CSS, and JavaScript — no frameworks, no build tools, just code.
-
+Hi! This is the source code for my personal portfolio site. I built it from scratch with vanilla HTML, CSS, and JavaScript. 
 **Live:** https://tiffaniechoi.github.io
 
 ---
