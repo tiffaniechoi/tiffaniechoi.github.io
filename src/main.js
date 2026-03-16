@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
           // Animate in
           el.classList.add('visible');
 
-          // After animation settles, switch to fast transition for hover/tilt
+          // After reveal settles, switch to fast transition so hover lift feels snappy
           clearTimeout(settleTimers.get(el));
           const delayMs = parseFloat(el.style.getPropertyValue('--delay')) || 0;
           settleTimers.set(el, setTimeout(() => {
@@ -175,19 +175,5 @@ document.addEventListener('DOMContentLoaded', () => {
     sectionObserver.observe(section);
   });
 
-
-  // === CARD 3D TILT ===
-  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-    const tiltCards = document.querySelectorAll('.exp-card, .proj-card, .edu-card, .skill-group, .quick-fact');
-    tiltCards.forEach((card) => {
-      card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const dx = (e.clientX - (rect.left + rect.width  / 2)) / (rect.width  / 2);
-        const dy = (e.clientY - (rect.top  + rect.height / 2)) / (rect.height / 2);
-        card.style.transform = `perspective(800px) rotateX(${(-dy * 4).toFixed(2)}deg) rotateY(${(dx * 4).toFixed(2)}deg) translateY(-4px)`;
-      });
-      card.addEventListener('mouseleave', () => { card.style.transform = ''; });
-    });
-  }
 
 });
