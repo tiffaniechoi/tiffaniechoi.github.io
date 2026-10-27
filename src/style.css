@@ -356,6 +356,8 @@ body {
   width: 120px;
   height: 120px;
   object-fit: cover;
+  object-position: center;
+  margin-inline: auto;
 }
 
 .hero__text {
@@ -677,24 +679,34 @@ body {
 
 .exp-card__role-content {
   min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
 }
 
 .exp-card__role .exp-card__title {
   margin-top: 0;
 }
 
+.exp-card__role .exp-card__dates {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 .exp-card__bullets {
   display: flex;
   flex-direction: column;
   gap: var(--space-2);
-  padding-left: var(--space-5);
+  padding-left: 0;
+  margin: 0;
 }
 
 .exp-card__bullets li {
-  list-style: disc;
+  list-style: none;
   font-size: var(--text-sm);
   color: var(--color-text-secondary);
   line-height: 1.6;
+  margin: 0;
 }
 
 .exp-card > .exp-card__bullets {
@@ -1395,6 +1407,14 @@ body {
 
 /* 16. Responsive — Tablet (min-width: 600px)
    ============================================================ */
+@media (max-width: 599px) {
+  .hero__avatar-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 600px) {
   .proj-card__top {
     flex-direction: row;
