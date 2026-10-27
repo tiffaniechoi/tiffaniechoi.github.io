@@ -22,9 +22,8 @@
   <!-- ===================== NAV ===================== -->
   <nav class="nav" id="site-nav" aria-label="Main navigation">
     <div class="nav__inner">
-      <a href="#hero" class="nav__name">
+      <a href="#hero" class="nav__name" aria-label="Home">
         <img src="assets/photos/profile/Emoji.png" alt="" class="nav__favicon" aria-hidden="true" width="24" height="24" />
-        Tiffanie Choi
       </a>
 
       <ul class="nav__links" role="list">
@@ -50,9 +49,9 @@
           <div class="hero__text reveal">
             <p class="hero__greeting">Hi, I'm</p>
             <h1 class="hero__name">Tiffanie</h1>
-            <p class="hero__role">Product Manager II @ Microsoft</p>
+            <p class="hero__role">Software Engineer II @ Microsoft</p>
 
-            <p class="hero__mission">PM with SWE roots, combining technical depth with product strategy and execution to drive scalable outcomes</p>
+            <p class="hero__mission">SWE and former PM, bridging engineering and product strategy to build impactful solutions</p>
 
             <div class="hero__social">
               <a href="https://www.linkedin.com/in/tiffaniexchoi/" class="hero__social-btn" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
@@ -78,8 +77,8 @@
 
           <div class="hero__avatar-wrap reveal" style="--delay: 150ms">
             <img
-              src="assets/photos/profile/github_propic.png"
-              alt="Tiffanie Choi"
+              src="assets/photos/profile/Emoji.png"
+              alt="Tiffanie's emoji portrait"
               class="hero__avatar"
               width="200"
               height="200"
@@ -169,17 +168,33 @@
               height="44"
             />
             <div class="exp-card__meta">
-              <div class="exp-card__company">Microsoft</div>
-              <div class="exp-card__title">Product Manager II</div>
-              <div class="exp-card__dates">
-                <p>August 2023 – Present</p>
-                <p>Seattle, WA</p>
-              </div>
+              <h3 class="exp-card__company">Microsoft</h3>
+              <p class="exp-card__dates">August 2023 – Present &middot; Seattle, WA</p>
             </div>
           </div>
-          <ul class="exp-card__bullets" aria-label="Highlights">
-            <li>Driving scalable cloud observability, operational readiness, and automation across Microsoft clouds by connecting product strategy, engineering execution, and AI‑powered tooling.</li>
-          </ul>
+
+          <div class="exp-card__roles" role="group" aria-label="Roles at Microsoft">
+            <section class="exp-card__role" aria-labelledby="microsoft-swe-title">
+              <span class="exp-card__timeline" aria-hidden="true"></span>
+              <div class="exp-card__role-content">
+                <h4 class="exp-card__title" id="microsoft-swe-title">Software Engineer II</h4>
+                <p class="exp-card__dates">October 2026 – Present</p>
+                <ul class="exp-card__bullets" aria-label="Highlights">
+                  <li>Backend engineer for Microsoft Commerce</li>
+                </ul>
+              </div>
+            </section>
+            <section class="exp-card__role" aria-labelledby="microsoft-pm-title">
+              <span class="exp-card__timeline" aria-hidden="true"></span>
+              <div class="exp-card__role-content">
+                <h4 class="exp-card__title" id="microsoft-pm-title">Product Manager II</h4>
+                <p class="exp-card__dates">August 2023 – September 2026</p>
+                <ul class="exp-card__bullets" aria-label="Highlights">
+                  <li>Driving scalable cloud observability, operational readiness, and automation across Microsoft clouds by connecting product strategy, engineering execution, and AI‑powered tooling.</li>
+                </ul>
+              </div>
+            </section>
+          </div>
         </article>
 
         <!-- Job 2 -->
@@ -226,7 +241,7 @@
             </div>
           </div>
           <ul class="exp-card__bullets" aria-label="Highlights">
-            <li>Automated satellite data ingestion and daily analytics for NOAA and NASA missions, enabling scalable, repeatable verification across multiple satellites.</li>
+            <li>Backend development of automated satellite data ingestion and analytics pipelines for NOAA and NASA missions, enabling scalable, repeatable verification across satellite systems.</li>
           </ul>
         </article>
 
